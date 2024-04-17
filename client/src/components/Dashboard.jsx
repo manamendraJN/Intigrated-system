@@ -188,6 +188,7 @@ export default function  Dashboard  ()  {
             </button>
             {showReportLinks && (
         <div  className='pl-3'>
+<<<<<<< HEAD
           <Link to="/link1" className="block p-2 text-blue-200 hover:text-white">
             Link 7
           </Link>
@@ -197,6 +198,22 @@ export default function  Dashboard  ()  {
           <Link to="/po-report" className="block p-2 text-blue-200 hover:text-white">
             Purchase Orders Report
           </Link>
+=======
+          
+          
+          <Link to="/po-report" className="block p-2 text-blue-200 hover:text-white">
+            Purchase Orders Report
+          </Link>
+          <Link to="/ViewWastageItem" className="block p-2 text-blue-200 hover:text-white">
+            View Wastage Item Report
+          </Link>
+          <Link to="/ViewreturnItemsDetails" className="block p-2 text-blue-200 hover:text-white">
+            View Return Item Report
+          </Link>
+          <Link to="/lost_item_list" className="block p-2 text-blue-200 hover:text-white">
+            Lost Item Report
+          </Link>
+>>>>>>> 27745a8c706ca8207957aa7695f674dde7aabc0c
         </div>
       )}
             </div>
@@ -221,8 +238,8 @@ export default function  Dashboard  ()  {
           <Link to="/addVehicles" className="block p-2 text-blue-200 hhover:text-white">
           Add Vehicles
           </Link>
-          <Link to="/link12" className="block p-2 text-blue-200 hover:text-white">
-            Link 12
+          <Link to="/MaintenanceListPage" className="block p-2 text-blue-200 hover:text-white">
+            Maintanance Schedule
           </Link>
           <Link to="/staffmanagement" className="block p-2 text-blue-200 hover:text-white">
           staffmanagement 

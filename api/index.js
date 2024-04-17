@@ -75,11 +75,16 @@ import shippingRouter from './routes/shippingRoutes.js';
 import returnRoute from './routes/returnRoute.js';
 import wasteRoute from './routes/wasteRoute.js';
 
+<<<<<<< HEAD
 import staffRoutes from './routes/staff.route.js';
 import authRoutes from './routes/auth.route.js';
 import shiftRoutes from './routes/shift.route.js';
 import workersShiftScheduleRoutes from './routes/workersShiftSchedule.route.js';
 
+=======
+import lostItemRoutes from './routes/lostItem.route.js'; 
+import Maintanceroute from './routes/maintance.route.js';
+>>>>>>> 27745a8c706ca8207957aa7695f674dde7aabc0c
 
 dotenv.config();
 
@@ -117,10 +122,15 @@ app.use('/shipping', shippingRouter )
 app.use('/api/returns', returnRoute);
 app.use('/api/wastes', wasteRoute);
 
+<<<<<<< HEAD
 app.use("/api/staff", staffRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/shift", shiftRoutes);
 app.use("/api/workersShiftSchedule", workersShiftScheduleRoutes);
+=======
+app.use("/api/maintance", Maintanceroute);
+app.use("/api/lostItem", lostItemRoutes);
+>>>>>>> 27745a8c706ca8207957aa7695f674dde7aabc0c
 
 dbConfig();
 

@@ -45,6 +45,8 @@ export default function DisplayLowInventory() {
       setShowLowInventoryError(true);
     }
   };
+  
+
 
 
   const handleLowInventoryDelete = async (lowinventoryId) => {

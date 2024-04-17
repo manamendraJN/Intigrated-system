@@ -36,6 +36,7 @@ import EnterWastageItem from './pages/EnterWastageItem';
 import UplodeWastageItems from './pages/UplodeWastageItems';
 import ViewWastageItem from './pages/ViewWastageItem';
 
+<<<<<<< HEAD
 import Addworkers from './pages/Addworkers';
 import Workerlist from './pages/Workerlist';
 import Addshift from './pages/Addshift';
@@ -49,6 +50,14 @@ import Updatestaff from './pages/Updatestaff';
 import Updateshift from './pages/Updateshift';
 import WorkersAssignList from './pages/WorkersAssignList';
 import AssignWorkerToShift from './pages/AssignWorkerToShift';
+=======
+import AddLostItem from './Pages/add_lost_item';
+import Lostitemlist from './Pages/lost_item_list';
+import EditItemPage from './Pages/edit_lost_item';
+import Addmaintance from './Pages/add_maintance_task';
+import MaintenanceList from './Pages/MaintenanceListPage';
+
+>>>>>>> 27745a8c706ca8207957aa7695f674dde7aabc0c
 
 export default function App() {
   return (
@@ -106,6 +115,7 @@ export default function App() {
           />
         </Route>
 
+<<<<<<< HEAD
         <Route path="/Staffmanagement" element={<Staffmanagement />} />
         <Route path="/Addworkers" element={<Addworkers />} />
         <Route path="/Workerlist" element={<Workerlist />} />
@@ -116,6 +126,14 @@ export default function App() {
         
         <Route path="/AssignWorkerToShift" element={<AssignWorkerToShift />} />
         <Route path="/WorkersAssignList" element={<WorkersAssignList/>}/>
+=======
+        <Route path="/add_lost_item" element={<AddLostItem />} />
+<Route path="/lost_item_list" element={<Lostitemlist/>}/>
+<Route path='/edit_lost_item/:id'  element={<EditItemPage/>}/>
+<Route path='/add_maintance_task'  element={<Addmaintance/>}/>
+<Route path='/MaintenanceListPage'  element={<MaintenanceList/>}/>
+
+>>>>>>> 27745a8c706ca8207957aa7695f674dde7aabc0c
       </Routes>
     </BrowserRouter>
   );
