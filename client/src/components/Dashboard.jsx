@@ -135,6 +135,14 @@ export default function  Dashboard  ()  {
           <Link to="/createlowinventoy" className="block p-2 text-blue-200 hover:text-white">
           Asign Low Inventory Level
           </Link>
+          <Link to="/return" className="block p-2 text-blue-200 hover:text-white">
+          Add Return Items
+          </Link>
+          
+          <Link to="/EnterWastageItem" className="block p-2 text-blue-200 hover:text-white">
+          Add Wastage Items
+          </Link>
+          
           
         </div>
       )}
@@ -191,11 +199,15 @@ export default function  Dashboard  ()  {
           <Link to="/link1" className="block p-2 text-blue-200 hover:text-white">
             Link 7
           </Link>
-          <Link to="/link2" className="block p-2 text-blue-200 hover:text-white">
-            Link 8
-          </Link>
+          
           <Link to="/po-report" className="block p-2 text-blue-200 hover:text-white">
             Purchase Orders Report
+          </Link>
+          <Link to="/ViewWastageItem" className="block p-2 text-blue-200 hover:text-white">
+            View Wastage Item Report
+          </Link>
+          <Link to="/ViewreturnItemsDetails" className="block p-2 text-blue-200 hover:text-white">
+            View Return Item Report
           </Link>
         </div>
       )}

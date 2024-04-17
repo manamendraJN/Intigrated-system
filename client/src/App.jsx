@@ -28,6 +28,14 @@ import VehicleMNG from './pages/VehicleMNG';
 import AddVehicles from './pages/AddVehicles';
 import AddShipping from './pages/AddShipping';
 
+
+import EnterReturnItems from './pages/EnterReturnItems';
+import UplodeReturnItems from './pages/UplodeReturnItems';
+import ViewreturnItemsDetails from './pages/ViewreturnItemsDetails';
+import EnterWastageItem from './pages/EnterWastageItem';
+import UplodeWastageItems from './pages/UplodeWastageItems';
+import ViewWastageItem from './pages/ViewWastageItem';
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -59,6 +67,19 @@ export default function App() {
          <Route path='/shippingmng' element={<ShippingMNG />} />
           <Route path='/shippings' element={<ShippingMNG />} />
           <Route path='/addShipping' element={<AddShipping />} />
+          <Route path="/return" element={<EnterReturnItems/>} />
+    
+    
+    <Route path="/UplodeReturnItems/:id" element={<UplodeReturnItems/>} />
+    
+    <Route path="/ViewreturnItemsDetails" element={<ViewreturnItemsDetails/>} />
+
+    <Route path="/EnterWastageItem" element={<EnterWastageItem/>} />
+
+
+    <Route path="/UplodeWastageItems/:id" element={<UplodeWastageItems/>} />
+
+    <Route path="/ViewWastageItem" element={<ViewWastageItem/>} />
        
           <Route path='/addVehicles' element={<AddVehicles />} />
              <Route path='/vehicles' element={<VehicleMNG />} />

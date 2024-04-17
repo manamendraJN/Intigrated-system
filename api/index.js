@@ -72,6 +72,9 @@ import { dbConfig } from './utils/dbconfig.js';
 import morgan from 'morgan'
 import vehicleRouter from './routes/vehicleRoutes.js';
 import shippingRouter from './routes/shippingRoutes.js';
+import returnRoute from './routes/returnRoute.js';
+import wasteRoute from './routes/wasteRoute.js';
+
 
 dotenv.config();
 
@@ -106,6 +109,8 @@ app.use('/api/order', orderRoute);
 app.use(express.static(path.join(__dirname, '/client/dist')));
 app.use('/vehicle', vehicleRouter )
 app.use('/shipping', shippingRouter )
+app.use('/api/returns', returnRoute);
+app.use('/api/wastes', wasteRoute);
 
 dbConfig();
 
