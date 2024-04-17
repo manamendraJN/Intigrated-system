@@ -10,16 +10,7 @@ export default function Header() {
     
     <div className="headerclass fixed top-0 right-0 w-5/6 h-12 bg-gray-200 flex flex-row justify-between items-center px-20">
             <div className="search">
-                {/* <div className="search-bar flex items-center flex-row h-10 w-80 border border-gray-300 rounded-xl bg-gray-100">
-                    <img src="https://img.icons8.com/ios/50/000000/search--v1.png" alt="Search Icon" style={{cursor: 'pointer', height: '30px', margin: '5px'}} />
-                    <div className="svg-container w-10 h-10 border-r-2 border-gray-200 flex justify-center items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
-                        <path class="svg-path" d="M10.5074 0.298218C10.3153 0.107211 10.0554 0 9.78444 0C9.51351 0 9.25358 0.107211 9.06144 0.298218L5.37976 3.92862L1.74936 0.298218C1.55721 0.107211 1.29729 0 1.02636 0C0.755423 0 0.495499 0.107211 0.303352 0.298218C0.20723 0.393555 0.130936 0.506981 0.0788706 0.631952C0.0268055 0.756923 0 0.890967 0 1.02635C0 1.16173 0.0268055 1.29578 0.0788706 1.42075C0.130936 1.54572 0.20723 1.65914 0.303352 1.75448L4.65163 6.10276C4.74697 6.19888 4.86039 6.27517 4.98536 6.32724C5.11033 6.3793 5.24438 6.40611 5.37976 6.40611C5.51514 6.40611 5.64919 6.3793 5.77416 6.32724C5.89913 6.27517 6.01255 6.19888 6.10789 6.10276L10.5074 1.75448C10.6036 1.65914 10.6799 1.54572 10.7319 1.42075C10.784 1.29578 10.8108 1.16173 10.8108 1.02635C10.8108 0.890967 10.784 0.756923 10.7319 0.631952C10.6799 0.506981 10.6036 0.393555 10.5074 0.298218Z" fill="#408DFB"/>
-
-                        </svg>
-                    </div>
-                    <input type="text" placeholder="Search" className="search-input border-none outline-none w-full h-full pl-5 text-base bg-transparent" />
-                </div> */}
+                
             </div>
             <div className="user-settings flex items-center justify-between  w-96 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
