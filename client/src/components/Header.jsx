@@ -1,114 +1,16 @@
-// import { FaSearch } from 'react-icons/fa';
-// import { Link, useNavigate } from 'react-router-dom';
-// import { useSelector } from 'react-redux';
-// import { useEffect, useState } from 'react';
 
-// export default function Header() {
-//   const { currentUser } = useSelector((state) => state.user);
-//   const [searchTerm, setSearchTerm] = useState('');
-//   const navigate = useNavigate();
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const urlParams = new URLSearchParams(window.location.search);
-//     urlParams.set('searchTerm', searchTerm);
-//     const searchQuery = urlParams.toString();
-//     navigate(`/search?${searchQuery}`);
-//   };
-
-//   useEffect(() => {
-//     const urlParams = new URLSearchParams(location.search);
-//     const searchTermFromUrl = urlParams.get('searchTerm');
-//     if (searchTermFromUrl) {
-//       setSearchTerm(searchTermFromUrl);
-//     }
-//   }, [location.search]);
-//   return (
-//     <header className='bg-slate-200 shadow-md'>
-//       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
-//         <Link to='/'>
-//           <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-//             <span className='text-slate-500'>Sahand</span>
-//             <span className='text-slate-700'>Estate</span>
-//           </h1>
-//         </Link>
-//         <form
-//           onSubmit={handleSubmit}
-//           className='bg-slate-100 p-3 rounded-lg flex items-center'
-//         >
-//           <input
-//             type='text'
-//             placeholder='Search...'
-//             className='bg-transparent focus:outline-none w-24 sm:w-64'
-//             value={searchTerm}
-//             onChange={(e) => setSearchTerm(e.target.value)}
-//           />
-//           <button>
-//             <FaSearch className='text-slate-600' />
-//           </button>
-//         </form>
-//         <ul className='flex gap-4'>
-//           <Link to='/'>
-//             <li className='hidden sm:inline text-slate-700 hover:underline'>
-//               Home
-//             </li>
-//           </Link>
-//           <Link to='/about'>
-//             <li className='hidden sm:inline text-slate-700 hover:underline'>
-//               About
-//             </li>
-//           </Link>
-//           <Link to='/profile'>
-//             {currentUser ? (
-//               <img
-//                 className='rounded-full h-7 w-7 object-cover'
-//                 src={currentUser.avatar}
-//                 alt='profile'
-//               />
-             
-//             ) : (
-//               <li className=' text-slate-700 hover:underline'> Sign in</li>
-//             )}
-//           </Link>
-//         </ul>
-//       </div>
-//     </header>
-//   );
-// }
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 export default function Header() {
   const { currentUser } = useSelector((state) => state.user);
   return (
-   /* <div className='bg-slate-200'>
-      <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
-        <Link to='/'>
-          <h1 className='font-bold'>Auth App</h1>
-        </Link>
-        <ul className='flex gap-4'>
-          <Link to='/'>
-            <li>Home</li>
-          </Link>
-          <Link to='/about'>
-            <li>About</li>
-          </Link>
-          <Link to='/profile'>
-            {currentUser ? (
-              <img src={currentUser.profilePicture} alt='profile' className='h-7 w-7 rounded-full object-cover' />
-            ) : (
-              <li>Sign In</li>
-            )}
-          </Link>
-        </ul>
-      </div>
-
   
-    /* </div> */
 
     
     <div className="headerclass fixed top-0 right-0 w-5/6 h-12 bg-gray-200 flex flex-row justify-between items-center px-20">
             <div className="search">
-                <div className="search-bar flex items-center flex-row h-10 w-80 border border-gray-300 rounded-xl bg-gray-100">
+                {/* <div className="search-bar flex items-center flex-row h-10 w-80 border border-gray-300 rounded-xl bg-gray-100">
                     <img src="https://img.icons8.com/ios/50/000000/search--v1.png" alt="Search Icon" style={{cursor: 'pointer', height: '30px', margin: '5px'}} />
                     <div className="svg-container w-10 h-10 border-r-2 border-gray-200 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
@@ -117,7 +19,7 @@ export default function Header() {
                         </svg>
                     </div>
                     <input type="text" placeholder="Search" className="search-input border-none outline-none w-full h-full pl-5 text-base bg-transparent" />
-                </div>
+                </div> */}
             </div>
             <div className="user-settings flex items-center justify-between  w-96 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
