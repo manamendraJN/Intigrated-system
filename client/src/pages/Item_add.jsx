@@ -78,7 +78,7 @@ export default function Item_add() {
         placeholder='ItemID' 
         id='ItemID' onChange={handleChange}/> 
 
-        Item Type<input className='w-full rounded-md p-3 text-center' 
+        Item Name<input className='w-full rounded-md p-3 text-center' 
         type="text" 
         placeholder='Item Type' 
         id='ItemType' onChange={handleChange}/> 
@@ -88,7 +88,7 @@ export default function Item_add() {
         placeholder='Item Discription' 
         id='ItemDiscription' onChange={handleChange}/> 
 
-        No. of Units<input className='w-full rounded-md p-3 text-center'
+        Item Quentity<input className='w-full rounded-md p-3 text-center'
         type="text" 
         placeholder='No. of Units' 
         id='ItemNoOfUints' onChange={handleChange} /> 

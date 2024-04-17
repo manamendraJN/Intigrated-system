@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
+
 const ViewWastageItem = () => {
   const [WastesItems, setWastesItems] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');

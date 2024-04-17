@@ -46,9 +46,6 @@ export default function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         
-       
-        
-       
 
         <Route element={<PrivateRoute />}>  
           <Route path='/profile' element={<Profile />} />
