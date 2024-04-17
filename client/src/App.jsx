@@ -36,6 +36,13 @@ import EnterWastageItem from './pages/EnterWastageItem';
 import UplodeWastageItems from './pages/UplodeWastageItems';
 import ViewWastageItem from './pages/ViewWastageItem';
 
+import AddLostItem from './Pages/add_lost_item';
+import Lostitemlist from './Pages/lost_item_list';
+import EditItemPage from './Pages/edit_lost_item';
+import Addmaintance from './Pages/add_maintance_task';
+import MaintenanceList from './Pages/MaintenanceListPage';
+
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -90,6 +97,13 @@ export default function App() {
             element={<UpdateLowInventory />}
           />
         </Route>
+
+        <Route path="/add_lost_item" element={<AddLostItem />} />
+<Route path="/lost_item_list" element={<Lostitemlist/>}/>
+<Route path='/edit_lost_item/:id'  element={<EditItemPage/>}/>
+<Route path='/add_maintance_task'  element={<Addmaintance/>}/>
+<Route path='/MaintenanceListPage'  element={<MaintenanceList/>}/>
+
       </Routes>
     </BrowserRouter>
   );

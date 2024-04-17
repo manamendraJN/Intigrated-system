@@ -75,6 +75,8 @@ import shippingRouter from './routes/shippingRoutes.js';
 import returnRoute from './routes/returnRoute.js';
 import wasteRoute from './routes/wasteRoute.js';
 
+import lostItemRoutes from './routes/lostItem.route.js'; 
+import Maintanceroute from './routes/maintance.route.js';
 
 dotenv.config();
 
@@ -111,6 +113,9 @@ app.use('/vehicle', vehicleRouter )
 app.use('/shipping', shippingRouter )
 app.use('/api/returns', returnRoute);
 app.use('/api/wastes', wasteRoute);
+
+app.use("/api/maintance", Maintanceroute);
+app.use("/api/lostItem", lostItemRoutes);
 
 dbConfig();
 

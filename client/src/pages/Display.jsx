@@ -47,6 +47,7 @@ export default function Display() {
       setShowListingsError(true);
     }
   };
+ 
 
   const handleListingDelete = async (listingId) => {
     try {

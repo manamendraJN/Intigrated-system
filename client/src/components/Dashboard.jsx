@@ -196,9 +196,7 @@ export default function  Dashboard  ()  {
             </button>
             {showReportLinks && (
         <div  className='pl-3'>
-          <Link to="/link1" className="block p-2 text-blue-200 hover:text-white">
-            Link 7
-          </Link>
+          
           
           <Link to="/po-report" className="block p-2 text-blue-200 hover:text-white">
             Purchase Orders Report
@@ -208,6 +206,9 @@ export default function  Dashboard  ()  {
           </Link>
           <Link to="/ViewreturnItemsDetails" className="block p-2 text-blue-200 hover:text-white">
             View Return Item Report
+          </Link>
+          <Link to="/lost_item_list" className="block p-2 text-blue-200 hover:text-white">
+            Lost Item Report
           </Link>
         </div>
       )}
@@ -233,8 +234,8 @@ export default function  Dashboard  ()  {
           <Link to="/addVehicles" className="block p-2 text-blue-200 hhover:text-white">
           Add Vehicles
           </Link>
-          <Link to="/link12" className="block p-2 text-blue-200 hover:text-white">
-            Link 12
+          <Link to="/MaintenanceListPage" className="block p-2 text-blue-200 hover:text-white">
+            Maintanance Schedule
           </Link>
         </div>
       )}
