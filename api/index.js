@@ -75,6 +75,11 @@ import shippingRouter from './routes/shippingRoutes.js';
 import returnRoute from './routes/returnRoute.js';
 import wasteRoute from './routes/wasteRoute.js';
 
+import staffRoutes from './routes/staff.route.js';
+import authRoutes from './routes/auth.route.js';
+import shiftRoutes from './routes/shift.route.js';
+import workersShiftScheduleRoutes from './routes/workersShiftSchedule.route.js';
+
 
 dotenv.config();
 
@@ -111,6 +116,11 @@ app.use('/vehicle', vehicleRouter )
 app.use('/shipping', shippingRouter )
 app.use('/api/returns', returnRoute);
 app.use('/api/wastes', wasteRoute);
+
+app.use("/api/staff", staffRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/shift", shiftRoutes);
+app.use("/api/workersShiftSchedule", workersShiftScheduleRoutes);
 
 dbConfig();
 

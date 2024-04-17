@@ -36,11 +36,26 @@ import EnterWastageItem from './pages/EnterWastageItem';
 import UplodeWastageItems from './pages/UplodeWastageItems';
 import ViewWastageItem from './pages/ViewWastageItem';
 
+import Addworkers from './pages/Addworkers';
+import Workerlist from './pages/Workerlist';
+import Addshift from './pages/Addshift';
+import Shiftlist from './pages/Shiftlist';
+
+import Staffmanagement from './pages/Staffmanagement';
+
+import { ToastContainer } from 'react-toastify'; // Import ToastContainer
+import 'react-toastify/dist/ReactToastify.css'; // Import toastify CSS
+import Updatestaff from './pages/Updatestaff';
+import Updateshift from './pages/Updateshift';
+import WorkersAssignList from './pages/WorkersAssignList';
+import AssignWorkerToShift from './pages/AssignWorkerToShift';
+
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
       <Dashboard />
+      <ToastContainer />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/sign-in' element={<SignIn />} />
@@ -90,6 +105,17 @@ export default function App() {
             element={<UpdateLowInventory />}
           />
         </Route>
+
+        <Route path="/Staffmanagement" element={<Staffmanagement />} />
+        <Route path="/Addworkers" element={<Addworkers />} />
+        <Route path="/Workerlist" element={<Workerlist />} />
+        <Route path="/Updatestaff/:staffId" element={<Updatestaff />} />
+        <Route path="/Updateshift/:shiftId" element={<Updateshift />} /> {/* Use element prop */}
+        <Route path="/Addshift" element={<Addshift />} />
+        <Route path="/Shiftlist" element={<Shiftlist />} />
+        
+        <Route path="/AssignWorkerToShift" element={<AssignWorkerToShift />} />
+        <Route path="/WorkersAssignList" element={<WorkersAssignList/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import User from '../models/user.model.js';
+import Staff from "../models/staff.model.js";
 import bcryptjs from 'bcryptjs';
 import { errorHandler } from '../utils/error.js';
 import jwt from 'jsonwebtoken';
@@ -77,3 +78,39 @@ export const signOut = async (req, res, next) => {
     next(error);
   }
 };
+
+export const register = async(req,res,next)=>{
+  const {name,id,type,number,email,address,joindate,shift,license,password} = req.body;
+
+  // Create an object to hold only the required fields
+  const staffData = {
+      name,
+      id,
+      type,
+      number,
+      email,
+      address,
+      joindate,
+      
+  };
+
+  
+  if(license){staffData.license = license}
+
+  // Handle null values for password
+  if (password !== null && password !== undefined) {
+      staffData.password = bcryptjs.hashSync(password, 10);
+  }
+
+  try {
+      // Create a new staff instance with the staffData object
+      const newStaff = new Staff(staffData);
+      await newStaff.save();
+      res.status(201).json({message:"Staff member created successfully"});
+  } catch (error) {
+      next(error);
+  }
+};
+
+
+
